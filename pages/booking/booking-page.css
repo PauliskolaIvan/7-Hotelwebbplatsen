@@ -1,0 +1,130 @@
+section.book {
+    display: grid;
+    grid-template-columns: 60% 40%
+  }
+  
+article.rightfield {
+    border: 1px solid black;
+    padding: 15px;
+    margin-top: 6%;
+    margin-left: 1.5%;
+    margin-bottom: 22.5%;
+    margin-right: 5.5%;
+  }
+  
+aside.asiderightfield {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+aside.asiderightfield h4 {
+    padding: 5%;
+  }
+  
+footer.bookingpage {
+    bottom: 0;
+  }
+
+#takvy {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  /*Form start*/
+
+form {
+  border: 1px solid black;
+  padding: 15px;
+  margin-top: 4%;
+  margin-left: 4%;
+  margin-bottom: 15%;
+  margin-right: 4%;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 100%;
+  /*ORIGINELLT 600 PX*/
+}
+
+/**/
+label {
+  margin: 1vh 1vw 0 0;
+}
+
+input, select, textarea {
+  margin: 0 1vw 0 1vw
+}
+
+@media (min-width: 600px) {
+  form {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  legend {
+    font-weight: bold;
+  }
+
+  legend {
+    grid-column: 1;
+    text-align: center;
+  }
+
+  label {
+    grid-column: 1;
+    text-align: right;
+    margin: 1vh 1vw;
+  }
+
+  input, select, button {
+    grid-column: 2/-1;
+    margin: 1vh 1vw;
+  }
+
+  input {
+    padding: 20px;
+    margin: 15px;
+  }
+
+  button {
+    margin: 10px;
+    padding: 20px;
+  }
+}
+
+/**/
+/*Form end*/
+@media screen and (max-width: 875px) {
+  nav a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  section.book {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  form {
+    margin-bottom: 4%;
+    
+  }
+  article.rightfield {
+    margin-top: auto;
+    margin-left: 4.0%;
+    margin-bottom: 4.5%;
+    margin-right: 4%;
+  }
+  #takvy {
+    display: none;
+  }
+  nav a {
+    font-size: 0.7rem;
+  }
+
+}
+@media screen and (max-width: 599px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}

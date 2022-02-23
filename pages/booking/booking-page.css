@@ -117,10 +117,6 @@ input, select, textarea {
   #takvy {
     display: none;
   }
-  nav a {
-    font-size: 0.7rem;
-  }
-
 }
 @media screen and (max-width: 599px) {
   footer {

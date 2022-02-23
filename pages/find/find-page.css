@@ -1,0 +1,96 @@
+
+section.sectionfind {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+article.findright {
+  border: 1px solid black;
+  padding: 15px;
+  width: 100%;
+}
+
+aside.asidefindright {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+article.findleft {
+  border: 1px solid black;
+  padding: 15px;
+  font-size: 1.4rem;
+  width: 100%;
+  background-color: white;
+}
+
+aside.asidefindleft {
+  margin: auto;
+}
+
+article.findleft h2 {
+  padding: 15% 30% 15% 30%;
+}
+
+div.rightdivone {
+  margin-left: 50px;
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+div.rightdivone h4 {
+  margin-bottom: 1%;
+}
+
+div.rightdivtwo {
+  margin: auto;
+  font-size:1.2rem;
+}
+
+  
+iframe {
+    width: 100%;
+    height: 700px;
+  }
+
+  @media screen and (max-width: 850px) {
+    section.sectionfind {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+    article.findleft {
+      border: 1px solid black;
+      padding: 15px;
+      font-size: 1.4rem;
+      width: 95%;
+      height: 90%;
+      margin: auto;
+      background-color: white;
+    }
+
+    article.findright {
+      border: 1px solid black;
+      padding: 15px;
+      font-size: 1.4rem;
+      width: 95%;
+      height: 100%;
+      margin: auto;
+    }
+
+    div.rightdivone {
+      font-size:0.9rem;
+      margin-bottom: 7%;
+    }
+    div.rightdivtwo {
+      font-size:0.9rem;
+    }
+
+    iframe {
+      width: 100%;
+      padding: 2.5% 2% 0.5% 2%;
+    }
+  }
+@media screen and (max-width: 450px) {
+  article.findleft h2 {
+    font-size: 1.1rem;
+  }
+}

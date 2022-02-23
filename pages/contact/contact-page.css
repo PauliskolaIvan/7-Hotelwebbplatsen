@@ -1,0 +1,113 @@
+section.contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+  article.contactrightfield {
+    text-align: center;
+    margin-top: 16%;
+  }
+  
+  article.contactrightfield h3 {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
+  
+    /*Form start*/
+
+form {
+  border: 1px solid black;
+  padding: 15px;
+  margin-top: 9%;
+  margin-left: 4%;
+  margin-bottom: 15%;
+  margin-right: 4%;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 100%;
+  min-width: 500px;
+  /*ORIGINELLT 600 PX*/
+}
+/**/
+label {
+  margin: 1vh 1vw 0 0;
+}
+
+input, select, textarea {
+  margin: 0 1vw 0 1vw
+}
+
+@media (min-width: 1px) {
+  form {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  legend {
+    font-weight: bold;
+  }
+
+  legend {
+    grid-column: 1;
+    text-align: center;
+  }
+
+  label {
+    grid-column: 1;
+    text-align: left;
+    margin: 1vh 1vw;
+  }
+
+  input, select, button {
+    grid-column: 2/-1;
+    margin: 1vh 1vw;
+  }
+
+  input {
+    padding: 20px;
+    margin: 15px;
+  }
+}
+/***SLUTADE HÄR****/
+fieldset {
+  border: hidden;
+  border: 1px solid black;
+  width: 280%;
+  margin-left: 110%;
+
+}
+
+
+  
+
+
+/**/
+/*Form end*/
+/**/
+
+
+@media screen and (max-width: 850px) {
+    section.contact {
+      grid-template-columns: 100%;
+    }
+    article.contactrightfield {order: 1}
+    form.contactform {order: 2;}
+    fieldset {
+      overflow: auto;
+    }
+    form {
+      margin-bottom: 4%;
+    }
+  }
+
+@media screen and (max-width: 545px){
+  form{
+    margin-left:0%;
+    margin-right: 0%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+}
+
+ 

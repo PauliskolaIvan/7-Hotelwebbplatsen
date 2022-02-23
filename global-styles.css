@@ -54,9 +54,7 @@ body {
   
   /*Nav bar SLUT*/
 
-/*  NAVBAR__
-The CSS below is only applied as long as the WIDTH IS MAXIMUM OF 850px 
-THE CSS BELOW IS FOR THE NAVBAR RESPONSIVENESS
+/*  NAVBAR Media
 */
 @media screen and (max-width: 850px)  {
 
@@ -69,9 +67,13 @@ THE CSS BELOW IS FOR THE NAVBAR RESPONSIVENESS
     footer a {
       font-size: 0.95rem;
     }
-      nav a {
-    font-size: 0.7rem;
-  }
 
 }
+
+@media screen and (max-width: 885px){
+          nav a {
+    font-size: 0.7rem;
+  }
+}
+    
 
